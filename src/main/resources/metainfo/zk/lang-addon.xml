@@ -1,0 +1,32 @@
+<language-addon>
+    <addon-name>m1</addon-name>
+  	<version>
+		<version-class>a1.Version</version-class>
+		<version-uid>1.0-SNAPSHOT</version-uid>
+		<zk-version>9.6.0</zk-version><!-- or later -->
+	</version>
+    
+	<language-name>xul/html</language-name>
+	<component>
+		<component-name>abc</component-name> <!-- required -->
+		<component-class>a1.xyz</component-class> <!-- required -->
+		<widget-class>m1.xyz</widget-class> <!-- required -->
+		<mold>
+			<mold-name>default</mold-name>
+			<mold-uri>mold/abc.js</mold-uri>
+
+			<!--
+			== Tip in advance ==
+				You don't have to specify a css.dsp if you need not ,
+				but usually you need it.
+
+				You could assign a .css file ,too.
+
+				The css.dsp is almost as same as CSS file ,
+				but have more powerful enhancement.	(like EL support.)
+			====
+			-->
+			<css-uri>css/abc.css.dsp</css-uri>
+		</mold>
+	</component>
+</language-addon>
